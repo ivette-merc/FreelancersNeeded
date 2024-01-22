@@ -43,7 +43,7 @@ const addFreelancerIntervalId = setInterval(addFreelancer, 500);
 
 render();
 
-
+getElementById;
 
 function render() {
   const freelancersId = document.querySelector("#freelancers");
@@ -77,7 +77,7 @@ function render() {
   });
 }
 
-document.getElementById("#freelancers").style.justifyItems = "center";
+//document.getElementById("#freelancers").style.justifyItems = "center";
 
 function addFreelancer() {
   const name = names[Math.floor(Math.random() * names.length)];
@@ -88,8 +88,6 @@ function addFreelancer() {
   listFreelancer.push({ name, price, occupation });
 
   render();
-
-  
 
   if (listFreelancer.length >= maxFreelancers) {
     clearInterval(addFreelancerIntervalId);
